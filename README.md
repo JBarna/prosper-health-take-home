@@ -16,6 +16,8 @@ Alternatively you can run in dev mode, `npm run dev`.
 1. `DEBUG=1` - this will append output from the program that explains why certain appointment slots were invalided for each clinician
 2. `PATIENT=<patient-id>` : Specify which patient you want to run the program against. Must be the ID of a mock-patient. Options are `byrne, joel`, defaults to `byrne`.
 
+### Run Tests
+Use `npm test` to execute the unit and integration tests.
 
 ## Assumptions
 1. The weekly limit for a clinician is interpreted as a calendar week as it begins on Sunday and goes to Saturday, rather than a rolling  stretch of 7 days that can begin on any day.
