@@ -1,9 +1,74 @@
 import program from '../src/main'
 import { patientIndex } from '../src/data/mock-patient'
 import { clinicians } from '../src/data/mock-clinician'
-import smallDataSlots from '../src/data/mock-data2'
 import largeDataSlots from '../src/data/mock-slot-data'
 import { Patient } from '../src/types/patient'
+
+const smallDataSlots = [
+    {
+      "length": 90,
+      "date": "2024-08-19T12:00:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T12:15:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T12:30:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T12:45:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T13:00:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T13:15:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T13:30:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-19T13:45:00.000Z"
+    },
+
+    // next day
+
+    {
+      "length": 90,
+      "date": "2024-08-20T12:00:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T12:15:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T12:30:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T12:45:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T13:00:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T13:15:00.000Z"
+    },
+    {
+      "length": 90,
+      "date": "2024-08-20T13:30:00.000Z"
+    },
+  ]
 
 function verifyResults(results: Record<string, string[][]>, originalSlots: any[]) {
     for (const pairs of Object.values(results)) {
